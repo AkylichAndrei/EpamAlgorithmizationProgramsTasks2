@@ -14,9 +14,8 @@ public class TaskSeventeen {
 		 decomposition2();
 	     decomposition3();
 	     decomposition4();
-	     
 	 }
-	 System.out.println("Для числа: " + x + " нужно произвести: " + m + " действий, чтобы получить 0 ");
+	 System.out.println("Р”Р»СЏ С‡РёСЃР»Р°: " + x + " РЅСѓР¶РЅРѕ РїСЂРѕРёР·РІРµСЃС‚Рё: " + m + " РґРµР№СЃС‚РІРёР№, С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ 0 ");
 		}
 	void decomposition2() {
 		n = k;
@@ -29,7 +28,7 @@ public class TaskSeventeen {
 	}
 	void decomposition3() {
 		for( j = 0  ; j <= arrayLength - 1  ; j++ ) 
-			summ = summ + dbArray[ j ]; //в массиве цифры стоят задом наперёд :)
+			summ = summ + dbArray[ j ]; //РІ РјР°СЃСЃРёРІРµ С†РёС„СЂС‹ СЃС‚РѕСЏС‚ Р·Р°РґРѕРј РЅР°РїРµСЂС‘Рґ :)
 	}
 	void decomposition4() {
 		 k = k - summ;
@@ -39,10 +38,9 @@ public class TaskSeventeen {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		TaskSeventeen myTaskSeventeen = new TaskSeventeen();
 		Scanner in = new Scanner(System.in);
-		System.out.println("Задайте число: ");
+		System.out.println("Р—Р°РґР°Р№С‚Рµ С‡РёСЃР»Рѕ: ");
 		myTaskSeventeen.k = in.nextInt();
 		in.close();
 		myTaskSeventeen.decomposition(); 

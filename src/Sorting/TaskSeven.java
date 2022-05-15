@@ -8,16 +8,14 @@ public class TaskSeven {
 	int[ ] dbArray = new int[ 100 ];
 	int[ ] dbArray2 = new int[ 100 ];
 	
-	
-	
 	void output() {
 
 		for( i = 0 ; i < n    ; i++ ) 
 		for( j = 0 ; j < m    ; j++ ) {
 			if(dbArray[ i ] <= dbArray[ j ]) {
-				System.out.println(" Ýëåìåíò A[ "+ dbArray2[ i ] + "] Ìåñòî äëÿ âñòàâêè ìåæäó "
-						+ " èíäåêñàìè ìàññèâà B [ "+ j 
-						+"] è B[ "+ (j + 1) +" ] " );
+				System.out.println(" Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚ A[ "+ dbArray2[ i ] + "] ÐœÐµÑÑ‚Ð¾ Ð´Ð»Ñ Ð²ÑÑ‚Ð°Ð²ÐºÐ¸ Ð¼ÐµÐ¶Ð´Ñƒ "
+						+ " Ð¸Ð½Ð´ÐµÐºÑÐ°Ð¼Ð¸ Ð¼Ð°ÑÑÐ¸Ð²Ð° B [ "+ j 
+						+"] Ð¸ B[ "+ (j + 1) +" ] " );
 			break;
 			}
 		}
@@ -25,15 +23,15 @@ public class TaskSeven {
 	public static void main(String[] args) {
 		TaskSeven myTaskSeven = new TaskSeven();
 		try (Scanner in = new Scanner(System.in)) {
-			System.out.println("Ââåäèòå äëèííó ìàññèâà A[N]: ");
+			System.out.println(" Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð»Ð¸Ð½Ð½Ñƒ Ð¼Ð°ÑÑÐ¸Ð²Ð° A[N]: ");
 			myTaskSeven.n = in.nextInt();
-			System.out.println(" Ââåäèòå ìàññèâ " );
+			System.out.println(" Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð°ÑÑÐ¸Ð²" );
 			for( myTaskSeven.i = 0 ; myTaskSeven.i <= myTaskSeven.n - 1  ; myTaskSeven.i++ ) {
 			myTaskSeven.dbArray[myTaskSeven.i] = in.nextInt();
 			}
-			System.out.println("Ââåäèòå äëèííó ìàññèâà B[N]: ");
+			System.out.println(" Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð»Ð¸Ð½Ð½Ñƒ Ð¼Ð°ÑÑÐ¸Ð²Ð° B[N]: ");
 			myTaskSeven.m = in.nextInt();
-			System.out.println(" Ââåäèòå ìàññèâ " );
+			System.out.println(" Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð°ÑÑÐ¸Ð² " );
 			for( myTaskSeven.i = 0 ; myTaskSeven.i <= myTaskSeven.m - 1  ; myTaskSeven.i++ ) {
 			myTaskSeven.dbArray2[myTaskSeven.i] = in.nextInt();
 			}

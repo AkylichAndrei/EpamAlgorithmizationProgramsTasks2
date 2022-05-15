@@ -13,7 +13,6 @@ public class TaskFourteen {
 		 decomposition2();
 	     decomposition3();
 	     decomposition4();
-	    
 	 }
 		}
 	void decomposition2() {
@@ -31,19 +30,18 @@ public class TaskFourteen {
 	}
 	void decomposition4() {
 		 if(x == i)
-	    	 System.out.println("Найдено число Армстронга: " + x);
+	    	 System.out.println("РќР°Р№РґРµРЅРѕ С‡РёСЃР»Рѕ РђСЂРјСЃС‚СЂРѕРЅРіР°: " + x);
 	     x=0;
 	     j=0;
 	     arrayLength=0;
 	}
 	public static void main(String[] args) {
-		// число армстронга 153 ( 1*1*1+5*5*5+3*3*3)
+		// С‡РёСЃР»Рѕ Р°СЂРјСЃС‚СЂРѕРЅРіР° 153 ( 1*1*1+5*5*5+3*3*3)
 		TaskFourteen myTaskFourteen = new TaskFourteen();
 		Scanner in = new Scanner(System.in);
-		System.out.println("Введите число K: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ K: ");
 		myTaskFourteen.k = in.nextInt();
 		in.close();
 		myTaskFourteen.decomposition(); 
 	}
-
 }

@@ -22,7 +22,7 @@ public class TaskNine {
 		}
 	}
 	void output() {
-		System.out.println("Ваша матрица: ");
+		System.out.println("Р’Р°С€Р° РјР°С‚СЂРёС†Р°: ");
 		for (i = 0; i <= n - 1; i++) {
         for (j = 0; j <= n - 1; j++) {
         	System.out.print(matrixA[i][j]);
@@ -30,7 +30,7 @@ public class TaskNine {
         }
         System.out.println();
 		}
-		System.out.println("Сумма столбцов: ");
+		System.out.println("РЎСѓРјРјР° СЃС‚РѕР»Р±С†РѕРІ: ");
 		for (i = 0; i <= n - 1; i++) {
 			System.out.print(matrixB[i]);
     	    System.out.print("\t");
@@ -39,7 +39,7 @@ public class TaskNine {
 	public static void main(String[] args) {
 		TaskNine myTaskNine = new TaskNine();
 		Scanner in = new Scanner(System.in);
-		System.out.println("Введите порядок матрицы n: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ РїРѕСЂСЏРґРѕРє РјР°С‚СЂРёС†С‹ n: ");
 		myTaskNine.n = in.nextInt();
 		myTaskNine.input();
 		myTaskNine.change();

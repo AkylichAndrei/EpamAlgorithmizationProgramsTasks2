@@ -1,5 +1,4 @@
 package Sorting;
-
 import java.util.Scanner;
 
 public class TaskEight {
@@ -10,18 +9,16 @@ public class TaskEight {
 	int[ ] dbArray2 = new int[ 100 ];
 	boolean flag;
 	
-	
 	void output() {
-		System.out.println("Ваши дроби= ");
+		System.out.println(" Р’Р°С€Рё РґСЂРѕР±Рё = ");
 		for( i = 0 ; i <= n - 1  ; i++ ) {
 			System.out.println( dbArray[i] + " / "+dbArray2[i] );
 			}
-		
 	}
 	void noz() {
 		flag = true;
 		noz = 2;
-		//ищем общий знаменатель
+		//РС‰РµРј РѕР±С‰РёР№ Р·РЅР°РјРµРЅР°С‚РµР»СЊ
 		while(flag==true) {
 			flag = false;
 		for(i  = 0 ;i <= n - 1; i++) 
@@ -32,49 +29,46 @@ public class TaskEight {
 		}
 		
 		noz--;
-		System.out.println(" Общий знаменатель = " +  noz);
-		
-		//домножаем чеслители на общий знаменатель
+		System.out.println(" РћР±С‰РёР№ Р·РЅР°РјРµРЅР°С‚РµР»СЊ = " +  noz);
+		// Р”РѕРјРЅРѕР¶Р°РµРј С‡РµСЃР»РёС‚РµР»СЊ РЅР° РѕР±С‰РёР№ Р·РЅР°РјРµРЅР°С‚РµР»СЊ
 		for(i  = 0 ;i <= n - 1; i++) {
 			 dbArray[i] = dbArray[i] * (noz / dbArray2[i]); 
 		}
-		//в знаменатели записываем наименьший общий знаменатель
+		// РІ Р·РЅР°РјРµРЅР°С‚РµР»Рё Р·Р°РїРёСЃС‹РІР°РµРј РЅР°РёРјРµРЅСЊС€РёР№ РѕР±С‰РёР№ Р·РЅР°РјРµРЅР°С‚РµР»СЊ
 		for(i  = 0 ;i <= n - 1; i++) {
 			 dbArray2[i] = noz; 
 		}
 		sort();
 	}
 	void sort() {
-		System.out.println(" Соритируем в порядке возрастания  " );
+		System.out.println(" РЎРѕСЂС‚РёСЂСѓРµРј РІ РїРѕСЂСЏРґРєРµ РІРѕР·СЂР°СЃС‚Р°РЅРёСЏ  " );
 		for( i = 1 ; i < n  ; i++ ) {
 			//binarySearch();
-			  // Вытаскиваем значение элемента
+			  // Р’С‹С‚Р°СЃРєРёРІР°РµРј Р·РЅР°С‡РµРЅРёРµ СЌР»РµРјРµРЅС‚Р°
   			int value = dbArray[i];
   			int j = i - 1;
   			for (; j >= 0; j--) {
-  			// Если вытащили значение меньшее — передвигаем больший элемент дальше
+  			// Р•СЃР»Рё РІС‹С‚Р°С‰РёР»Рё Р·РЅР°С‡РµРЅРёРµ РјРµРЅСЊС€РµРµ - РїРµСЂРµРґРІРёРіР°РµРј Р±РѕР»СЊС€РёР№ СЌР»РµРјРµРЅС‚ РґР°Р»СЊС€Рµ
   				if ( dbArray[j] > value) {
   					dbArray[j + 1] = dbArray[j];
   				} else {
-  					// Если вытащенный элемент больше — останавливаемся
+  					// РёРЅР°С‡Рµ РµСЃР»Рё РІС‹С‚Р°С‰РµРЅРЅС‹Р№ СЌР»РµРјРµРЅС‚ Р±РѕР»СЊС€Рµ - РѕСЃС‚Р°РЅР°РІР»РёРІР°РµРјСЃСЏ
   					break;
   				}
   			}
-  			// В освободившееся место вставляем вытащенное значение
-  			
+  			// Р’ РѕСЃРІРѕР±РѕРґРёРІС€РµРµСЃСЏ РјРµСЃС‚Рѕ РІСЃС‚Р°РІР»СЏРµРј РІС‹С‚Р°С‰РµРЅРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ
   			dbArray[j + 1] = value;
-			
 		}
 	}
 	public static void main(String[] args) {
 		TaskEight myTaskEight = new TaskEight();
 		try (Scanner in = new Scanner(System.in)) {
-			System.out.println("Сколько дробей p/q вы хотите ввести? : ");
+			System.out.println(" РЎРєРѕР»СЊРєРѕ РґСЂРѕР±РµР№ p/q РІС‹ С…РѕС‚РёС‚Рµ РІРІРµСЃС‚Рё? : ");
 			myTaskEight.n = in.nextInt();
 			for( myTaskEight.i = 0 ; myTaskEight.i <= myTaskEight.n - 1  ; myTaskEight.i++ ) {
-			System.out.println(" Введите числитель дроби " + (myTaskEight.i+1) + "  p = ");
+			System.out.println(" Р’РІРµРґРёС‚Рµ С‡РёСЃР»РёС‚РµР»СЊ РґСЂРѕР±Рё " + (myTaskEight.i+1) + "  p = ");
 			myTaskEight.dbArray[myTaskEight.i] = in.nextInt();
-			System.out.println(" Введите Знаменатель дроби " + (myTaskEight.i+1) + "  q = ");
+			System.out.println(" Р’РІРµРґРёС‚Рµ Р·РЅР°РјРµРЅР°С‚РµР»СЊ РґСЂРѕР±Рё " + (myTaskEight.i+1) + "  q = ");
 			myTaskEight.dbArray2[myTaskEight.i] = in.nextInt();
 			}
 			in.close();

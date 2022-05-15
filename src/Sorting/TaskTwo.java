@@ -15,7 +15,7 @@ public class TaskTwo {
 		}
 	}
 	void outputOnDisplay() {
-		System.out.println(" Новая последовательность " );
+		System.out.println(" РќРѕРІР°СЏ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ " );
 		for( i = 0 ; i <= n + m - 1 ; i++ ) {
 			System.out.print("  " + dbArray[ i ] );
 			}
@@ -33,15 +33,15 @@ public class TaskTwo {
 	public static void main(String[] args) {
 		TaskTwo myTaskTwo = new TaskTwo();
 		try (Scanner in = new Scanner(System.in)) {
-			System.out.println("Введите длинну массива A[N]: ");
+			System.out.println(" Р’РІРµРґРёС‚Рµ РґР»РёРЅРЅСѓ РјР°СЃСЃРёРІР° A[N]: ");
 			myTaskTwo.n = in.nextInt();
-			System.out.println(" Введите массив " );
+			System.out.println(" Р’РІРµРґРёС‚Рµ РјР°СЃСЃРёРІ " );
 			for( myTaskTwo.i = 0 ; myTaskTwo.i <= myTaskTwo.n - 1 ; myTaskTwo.i++ ) {
 			myTaskTwo.dbArray[myTaskTwo.i] = in.nextDouble();
 			}
-			System.out.println("Введите длинну массива B[M]: ");
+			System.out.println(" Р’РІРµРґРёС‚Рµ РґР»РёРЅРЅСѓ РјР°СЃСЃРёРІР° B[M]: ");
 			myTaskTwo.m = in.nextInt();
-			System.out.println(" Введите массив " );
+			System.out.println(" Р’РІРµРґРёС‚Рµ РјР°СЃСЃРёРІ " );
 			for( myTaskTwo.i = 0 ; myTaskTwo.i <= myTaskTwo.m - 1 ; myTaskTwo.i++ ) {
 			myTaskTwo.dbArray2[myTaskTwo.i] = in.nextDouble();
 			}

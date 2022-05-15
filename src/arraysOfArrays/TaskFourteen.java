@@ -25,9 +25,8 @@ public class TaskFourteen {
 		}
 		}
 	}
-
 	void output() {
-		System.out.println("Ваша матрица: ");
+		System.out.println("Р’Р°С€Р° РјР°С‚СЂРёС†Р°: ");
 		for (i = 0; i <= m - 1; i++) {
         for (j = 0; j <= n - 1; j++) {
         	System.out.print(matrixA[i][j]);
@@ -39,15 +38,13 @@ public class TaskFourteen {
 	public static void main(String[] args) {
 		TaskFourteen myTaskFourteen = new TaskFourteen();
 		Scanner in = new Scanner(System.in);
-		System.out.println("Введите порядок матрицы m: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ РїРѕСЂСЏРґРѕРє РјР°С‚СЂРёС†С‹ m: ");
 		myTaskFourteen.m = in.nextInt();
-		System.out.println("Введите порядок матрицы n: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ РїРѕСЂСЏРґРѕРє РјР°С‚СЂРёС†С‹ n: ");
 		myTaskFourteen.n = in.nextInt();
 		in.close();
 		myTaskFourteen.input();
 		myTaskFourteen.output();
-
-
 	}
 
 }

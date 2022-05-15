@@ -22,19 +22,17 @@ public class TaskeEleven {
 			m = m / 10;
 		}
 		if( arrayLengthN > arrayLengthM )
-			System.out.print("Количество цифр в числе " + n1 +" больше ");
+			System.out.print("РљРѕР»РёС‡РµСЃС‚РІРѕ С†РёС„СЂ РІ С‡РёСЃР»Рµ " + n1 +" Р±РѕР»СЊС€Рµ ");
 		else if( arrayLengthN < arrayLengthM )
-			System.out.print("Количество цифр в числе " + m1 +" больше ");
-		else System.out.println("Количество цифр одинаковое: ");
-
+			System.out.print("РљРѕР»РёС‡РµСЃС‚РІРѕ С†РёС„СЂ РІ С‡РёСЃР»Рµ " + m1 +" Р±РѕР»СЊС€Рµ ");
+		else System.out.println("РљРѕР»РёС‡РµСЃС‚РІРѕ С†РёС„СЂ РѕРґРёРЅР°РєРѕРІРѕРµ: ");
 		}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		TaskeEleven myTaskeEleven = new TaskeEleven();
 		Scanner in = new Scanner(System.in);
-		System.out.println("Введите первое натуральнвое число для сравнения: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ РїРµСЂРІРѕРµ РЅР°С‚СѓСЂР°Р»СЊРЅРІРѕРµ С‡РёСЃР»Рѕ РґР»СЏ СЃСЂР°РІРЅРµРЅРёСЏ: ");
 		myTaskeEleven.n = in.nextInt();
-		System.out.println("Введите торое натуральнвое число для сравнения: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ С‚РѕСЂРѕРµ РЅР°С‚СѓСЂР°Р»СЊРЅРІРѕРµ С‡РёСЃР»Рѕ РґР»СЏ СЃСЂР°РІРЅРµРЅРёСЏ: ");
 		myTaskeEleven.m = in.nextInt();
 		in.close();
 		myTaskeEleven.outputOnDisplay(); 

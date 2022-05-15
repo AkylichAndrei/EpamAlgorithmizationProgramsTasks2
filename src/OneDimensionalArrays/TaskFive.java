@@ -9,17 +9,16 @@ public class TaskFive {
 	void outputOnDisplay() {
 		for( i = 0 ; i <= n - 1 ; i++ ) {
 			if(dbArray[ i ] > i) {
-				System.out.println(" Значение элемента " + dbArray[ i ] + " больше индекса "+ i );
+				System.out.println(" Р—РЅР°С‡РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° " + dbArray[ i ] + " Р±РѕР»СЊС€Рµ РёРЅРґРµРєСЃР° "+ i );
 			} 
 		}
-		
 	}
 	public static void main(String[] args) {
 		TaskFive myTaskFive = new TaskFive();
 		try (Scanner in = new Scanner(System.in)) {
-			System.out.println(" Из скольки чисел будет последовательность?: ");
+			System.out.println(" РР· СЃРєРѕР»СЊРєРё С‡РёСЃРµР» Р±СѓРґРµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ?: ");
 			myTaskFive.n = in.nextInt();
-			System.out.println(" Вводите числа: ");
+			System.out.println(" Р’РІРѕРґРёС‚Рµ С‡РёСЃР»Р°: ");
 			for( myTaskFive.i = 0 ; myTaskFive.i <= myTaskFive.n - 1 ; myTaskFive.i++ ) {
 			myTaskFive.dbArray[myTaskFive.i] = in.nextDouble();
 			}

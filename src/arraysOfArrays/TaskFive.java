@@ -24,7 +24,7 @@ public class TaskFive {
 	public static void main(String[] args) {
 		TaskFive myTaskFive = new TaskFive();
 		Scanner in = new Scanner(System.in);
-		System.out.println("Введите порядок матрицы n-чётное: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ РїРѕСЂСЏРґРѕРє РјР°С‚СЂРёС†С‹ n-С‡С‘С‚РЅРѕРµ: ");
 		myTaskFive.n = in.nextInt();
 		in.close();
 		myTaskFive.input();

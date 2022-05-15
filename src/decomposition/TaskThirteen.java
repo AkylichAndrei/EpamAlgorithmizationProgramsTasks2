@@ -9,19 +9,17 @@ public class TaskThirteen {
 	void decomposition() {
 	 for( i = n ; i <= ( n * 2 ) - 1 ; i++)
 		 decomposition2();
-		 
 		}
 	void decomposition2() {
 		for( j = i + 1 ; j <= ( n * 2 )  ; j++)
 			 if(( j - i ) == 2 ){
-				 System.out.println("×èñëà: " + i + " è " + j + " Áëèçíåöû");
+				 System.out.println("Ð§Ð¸ÑÐ»Ð°: " + i + " Ð¸ " + j + " Ð‘Ð»Ð¸Ð·Ð½ÐµÑ†Ñ‹");
 		 }
 	}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		TaskThirteen myTaskThirteen = new TaskThirteen();
 		Scanner in = new Scanner(System.in);
-		System.out.println("Ââåäèòå ÷èñëî N: ");
+		System.out.println("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ N: ");
 		myTaskThirteen.n = in.nextInt();
 		in.close();
 		myTaskThirteen.decomposition(); 

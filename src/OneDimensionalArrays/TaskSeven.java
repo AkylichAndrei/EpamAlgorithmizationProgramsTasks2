@@ -10,21 +10,21 @@ public class TaskSeven {
 		for( i = 0 ; i <= n - 1 ; i++ ) {
 		if((dbArray [ i ] + dbArray [ 2 * n - i - 1 ]) > max) 
 		max = dbArray [ i ] + dbArray [ 2 * n - i - 1];
-		System.out.println("Индекс элемента (i = " + i + ") и (2 * n - i - 1 = "
-				+ ( 2 * n - i - 1 ) + ") Максимальная сумма = " + max);
+		System.out.println(" РРЅРґРµРєСЃ СЌР»РµРјРµРЅС‚Р°  (i = " + i + ") Рё (2 * n - i - 1 = "
+				+ ( 2 * n - i - 1 ) + ") РњР°РєСЃРёРјР°Р»СЊРЅР°СЏ СЃСѓРјРјР° = " + max);
 	    }
-		System.out.println("Результат: " + max);
+		System.out.println(" Р РµР·СѓР»СЊС‚Р°С‚: " + max);
 	}
 
 	public static void main(String[] args) {
 		TaskSeven myTaskSeven = new TaskSeven();
 		try (Scanner in = new Scanner(System.in)) {
-			System.out.println(" Из скольки чисел будет последовательность 2*n?: ");
+			System.out.println("РР· СЃРєРѕР»СЊРєРё С‡РёСЃРµР» Р±СѓРґРµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ 2*n?: ");
 			myTaskSeven.n = in.nextInt();
 			for( myTaskSeven.i = 0 ; myTaskSeven.i <= 2 * myTaskSeven.n - 1 ; myTaskSeven.i++ ) {
 			myTaskSeven.dbArray[ myTaskSeven.i ] =  in.nextDouble();
 			}
-			System.out.println(" Массив заполнен ");
+			System.out.println(" РњР°СЃСЃРёРІ Р·Р°РїРѕР»РЅРµРЅ ");
 			in.close();
 		}
 		myTaskSeven.func1(); 

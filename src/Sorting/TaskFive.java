@@ -1,46 +1,44 @@
 package Sorting;
-
 import java.util.Scanner;
+
+// РџСЂР°РІРёР»СЊРЅРѕ РІС‹РїРѕР»РЅРµРЅРЅРѕРµ Р·Р°РґР°РЅРёРµ РІ TaskFiveTrue. РўСѓС‚ РїСЂРѕСЃС‚Рѕ СЃРѕСЂС‚РёСЂРѕРІРєР° РІСЃС‚Р°РІРєР°РјРё.
 
 public class TaskFive {
 	int i,m,n,k,j,firstIndex,lastIndex,middleIndex;
 	int temp;
 	int[ ] dbArray = new int[ 100 ];
 	void outputOnDisplay() {
-		System.out.println(" Новая последовательность " );
+		System.out.println(" РќРѕРІР°СЏ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ" );
 		for( i = 0 ; i <= n - 1 ; i++ ) {
 			System.out.print("  " + dbArray[ i ] );
 			}
 		}
-	//Сортировка вcтавками
+	//РЎРѕСЂС‚РёСЂРѕРІРєР° РІСЃС‚Р°РІРєР°РјРё
 	void sort() {
 		for( i = 1 ; i < n  ; i++ ) {
-			//binarySearch();
-			  // Вытаскиваем значение элемента
+			  // Р’С‹С‚Р°СЃРєРёРІР°РµРј Р·РЅР°С‡РµРЅРёРµ СЌР»РµРјРµРЅС‚Р°
   			int value = dbArray[i];
   			int j = i - 1;
   			for (; j >= 0; j--) {
-  			// Если вытащили значение меньшее — передвигаем больший элемент дальше
+  			// Р•СЃР»Рё РІС‹С‚Р°С‰РёР»Рё Р·РЅР°С‡РµРЅРёРµ РјРµРЅСЊС€Рµ РїРµСЂРµРґРІРёРіР°РµРј Р±РѕР»СЊС€РёР№ СЌР»РµРјРµРЅС‚ РґР°Р»СЊС€Рµ
   				if ( dbArray[j] > value) {
   					dbArray[j + 1] = dbArray[j];
   				} else {
-  					// Если элемент больше — останавливаемся
+  					// Р•СЃР»Рё РІС‹С‚Р°С‰РµРЅРЅС‹Р№ СЌР»РµРјРµРЅС‚ Р±РѕР»СЊС€Рµ - СЃС‚РѕРї
   					break;
   				}
   			}
-  			// В освободившееся место вставляем значение
-  			
+  			// Р’ РѕСЃРІРѕР±РѕРґРёРІС€РµРµСЃСЏ РјРµСЃС‚Рѕ РІСЃС‚Р°РІР»СЏРµРј РІС‹С‚Р°С‰. СЌР»РµРјРµРЅС‚
   			dbArray[j + 1] = value;
-			
 		}	    		
 	}
 
 	public static void main(String[] args) {
 		TaskFive myTaskFive = new TaskFive();
 		try (Scanner in = new Scanner(System.in)) {
-			System.out.println("Введите длинну массива A[N]: ");
+			System.out.println(" Р’РІРµРґРёС‚Рµ РґР»РёРЅРЅСѓ РјР°СЃСЃРёРІР° A[N]: ");
 			myTaskFive.n = in.nextInt();
-			System.out.println(" Введите массив " );
+			System.out.println(" Р’РІРµРґРёС‚Рµ РјР°СЃСЃРёРІ" );
 			for( myTaskFive.i = 0 ; myTaskFive.i <= myTaskFive.n - 1 ; myTaskFive.i++ ) {
 			myTaskFive.dbArray[myTaskFive.i] = in.nextInt();
 			}

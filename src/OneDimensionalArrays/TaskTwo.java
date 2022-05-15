@@ -15,7 +15,7 @@ public class TaskTwo {
 		}
 	}
 	void outputOnDisplay2() {
-		System.out.println(" Новая последовательность: ");
+		System.out.println("  РќРѕРІР°СЏ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ: ");
 		for( i = 0 ; i <= n - 1 ; i++ ) {
 		System.out.print(" "+dbArray[ i ]);			
 		}
@@ -24,19 +24,19 @@ public class TaskTwo {
 	public static void main(String[] args) {
 		TaskTwo myTaskTwo = new TaskTwo();
 		try (Scanner in = new Scanner(System.in)) {
-			System.out.println(" Из скольки чисел будет последовательность?: ");
+			System.out.println("  РР· СЃРєРѕР»СЊРєРё С‡РёСЃРµР» Р±СѓРґРµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ?: ");
 			myTaskTwo.n = in.nextInt();
-			System.out.println(" Вводите числа: ");
+			System.out.println(" Р’РІРѕРґРёС‚Рµ С‡РёСЃР»Р°: ");
 			for( myTaskTwo.i = 0 ; myTaskTwo.i <= myTaskTwo.n - 1 ; myTaskTwo.i++ ) {
 			myTaskTwo.dbArray[myTaskTwo.i] = in.nextDouble();
 			}
-			System.out.println("Введите число Z: ");
+			System.out.println(" Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ Z: ");
 			myTaskTwo.z = in.nextInt();
 			in.close();
 		}
 		myTaskTwo.outputOnDisplay();  
 		myTaskTwo.outputOnDisplay2();
-		System.out.println(" Количество замен: " + myTaskTwo.k);
+		System.out.println("  РљРѕР»РёС‡РµСЃС‚РІРѕ Р·Р°РјРµРЅ: " + myTaskTwo.k);
 		
 	}
 

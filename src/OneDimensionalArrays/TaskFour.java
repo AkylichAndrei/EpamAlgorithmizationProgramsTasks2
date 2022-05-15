@@ -14,7 +14,7 @@ public class TaskFour {
 				k = i;
 			} 
 		}
-		System.out.println(" Наибольший элемент: " + B);
+		System.out.println(" РќР°РёР±РѕР»СЊС€РёР№ СЌР»РµРјРµРЅС‚: " + B);
 	}
 	void outputOnDisplay2() {
 		M = dbArray[ 0 ];
@@ -24,13 +24,13 @@ public class TaskFour {
 				z = i;
 			} 
 		}
-		System.out.println(" Наименьший элемент: " + M);
+		System.out.println(" РќР°РёРјРµРЅСЊС€РёР№ СЌР»РµРјРµРЅС‚: " + M);
 	}
 	void outputOnDisplay3() {
 		N = dbArray[ k ];
 		dbArray[ k ] = dbArray[ z ];
 		dbArray[ z ] = N;
-		System.out.println(" Новая последовательность: ");
+		System.out.println(" РќРѕРІР°СЏ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ: ");
 		for( i = 0 ; i <= n - 1 ; i++ ) {
 			System.out.println(" " + dbArray[ i ]);
 		}
@@ -39,13 +39,12 @@ public class TaskFour {
 	public static void main(String[] args) {
 		TaskFour myTaskFour = new TaskFour();
 		try (Scanner in = new Scanner(System.in)) {
-			System.out.println(" Из скольки чисел будет последовательность?: ");
+			System.out.println(" РР· СЃРєРѕР»СЊРєРё С‡РёСЃРµР» Р±СѓРґРµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ?: ");
 			myTaskFour.n = in.nextInt();
-			System.out.println(" Вводите числа: ");
+			System.out.println(" Р’РІРѕРґРёС‚Рµ С‡РёСЃР»Р°: ");
 			for( myTaskFour.i = 0 ; myTaskFour.i <= myTaskFour.n - 1 ; myTaskFour.i++ ) {
 			myTaskFour.dbArray[myTaskFour.i] = in.nextDouble();
 			}
-			
 			in.close();
 		}
 		myTaskFour.outputOnDisplay();  

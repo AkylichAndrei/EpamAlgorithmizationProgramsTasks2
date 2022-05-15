@@ -22,7 +22,7 @@ public class TaskTen {
 		}
 	}
 	void output() {
-		System.out.println("Ваша матрица: ");
+		System.out.println("Р’Р°С€Р° РјР°С‚СЂРёС†Р°: ");
 		for (i = 0; i <= n - 1; i++) {
         for (j = 0; j <= n - 1; j++) {
         	System.out.print(matrixA[i][j]);
@@ -30,7 +30,7 @@ public class TaskTen {
         }
         System.out.println();
 		}
-		System.out.println("Положительные элементы в главной диагонали: ");
+		System.out.println("РџРѕР»РѕР¶РёС‚РµР»СЊРЅС‹Рµ СЌР»РµРјРµРЅС‚С‹ РІ РіР»Р°РІРЅРѕР№ РґРёР°РіРѕРЅР°Р»Рё: ");
 		for (i = 0; i <= temp - 1; i++) {
 			System.out.print(matrixB[i]);
     	    System.out.print("\t");
@@ -39,7 +39,7 @@ public class TaskTen {
 	public static void main(String[] args) {
 		TaskTen myTaskTen = new TaskTen();
 		Scanner in = new Scanner(System.in);
-		System.out.println("Введите порядок матрицы n: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ РїРѕСЂСЏРґРѕРє РјР°С‚СЂРёС†С‹ n: ");
 		myTaskTen.n = in.nextInt();
 		myTaskTen.input();
 		myTaskTen.change();

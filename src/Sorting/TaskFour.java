@@ -9,13 +9,13 @@ public class TaskFour {
 	int[ ] dbArray = new int[ 100 ];
 	
 	void outputOnDisplay() {
-		System.out.println(" Новая последовательность " );
+		System.out.println(" РќРѕРІР°СЏ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ " );
 		for( i = 0 ; i <= n - 1 ; i++ ) {
 			System.out.print("  " + dbArray[ i ] );
 			}
-		System.out.println(" Количество перестановок  " + j );
+		System.out.println(" РљРѕР»РёС‡РµСЃС‚РІРѕ РїРµСЂРµСЃС‚Р°РЅРѕРІРѕРє " + j );
 		}
-	//Сортировка обменами
+	// РЎРѕСЂС‚РёСЂРѕРІРєР° РѕР±РјРµРЅР°РјРё
 	void sort() {
 		while( bol == false ) {
 		bol = true;
@@ -34,9 +34,9 @@ public class TaskFour {
 	public static void main(String[] args) {
 		TaskFour myTaskFour = new TaskFour();
 		try (Scanner in = new Scanner(System.in)) {
-			System.out.println("Введите длинну массива A[N]: ");
+			System.out.println(" Р’РІРµРґРёС‚Рµ РґР»РёРЅРЅСѓ РјР°СЃСЃРёРІР° A[N]: ");
 			myTaskFour.n = in.nextInt();
-			System.out.println(" Введите массив " );
+			System.out.println(" Р’РІРµРґРёС‚Рµ РјР°СЃСЃРёРІ " );
 			for( myTaskFour.i = 0 ; myTaskFour.i <= myTaskFour.n - 1 ; myTaskFour.i++ ) {
 			myTaskFour.dbArray[myTaskFour.i] = in.nextInt();
 			}

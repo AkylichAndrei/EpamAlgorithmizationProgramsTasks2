@@ -12,7 +12,7 @@ public class TaskEight {
 		for( i = 1 ; i <= n - 1 ; i++ ) 
 		if(dbArray [ i ] < min) 
 		min = dbArray [ i ] ;
-		System.out.println("Ìèíèìàëüíûé ýëåìåíò = " + min);
+		System.out.println(" ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚  = " + min);
 	}
 	void newArray() {
 		j = 0;
@@ -24,20 +24,20 @@ public class TaskEight {
 		m = j;
 	}
 	void newArrayPrint() {	
-	System.out.println(" Íîâàÿ ïîñëåäîâàòåëüíîñòü : ");
+	System.out.println(" ÐÐ¾Ð²Ð°Ñ Ð¿Ð¾ÑÐ»ÐµÐ´Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚ÑŒ  : ");
 	for( j = 0 ; j <= m - 1 ; j++ ) 
 		System.out.print(" | "+ newDbArray[ j ]);
 	}
 	public static void main(String[] args) {
 		TaskEight myTaskEight = new TaskEight();
 		try (Scanner in = new Scanner(System.in)) {
-			System.out.println(" Èç ñêîëüêè ÷èñåë áóäåò ïîñëåäîâàòåëüíîñòü?: ");
+			System.out.println(" Ð˜Ð· ÑÐºÐ¾Ð»ÑŒÐºÐ¸ Ñ‡Ð¸ÑÐµÐ» Ð±ÑƒÐ´ÐµÑ‚ Ð¿Ð¾ÑÐ»ÐµÐ´Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚ÑŒ?: ");
 			myTaskEight.n = in.nextInt();
-			System.out.println(" Ââîäèòå ÷èñëà: ");
+			System.out.println(" Ð’Ð²Ð¾Ð´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð°: ");
 			for( myTaskEight.i = 0 ; myTaskEight.i <= myTaskEight.n - 1 ; myTaskEight.i++ ) {
 			myTaskEight.dbArray[ myTaskEight.i ] =  in.nextDouble();
 			}
-			System.out.println(" Ìàññèâ çàïîëíåí ");
+			System.out.println(" ÐœÐ°ÑÑÐ¸Ð² Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½  ");
 			in.close();
 		}
 		myTaskEight.min(); 

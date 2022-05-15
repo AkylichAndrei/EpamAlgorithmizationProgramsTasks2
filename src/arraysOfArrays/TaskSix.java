@@ -30,7 +30,7 @@ public class TaskSix {
 	public static void main(String[] args) {
 		TaskSix myTaskSix = new TaskSix();
 		Scanner in = new Scanner(System.in);
-		System.out.println("Введите порядок матрицы n-чётное: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ РїРѕСЂСЏРґРѕРє РјР°С‚СЂРёС†С‹ n-С‡С‘С‚РЅРѕРµ: ");
 		myTaskSix.n = in.nextInt();
 		in.close();
 		myTaskSix.input();

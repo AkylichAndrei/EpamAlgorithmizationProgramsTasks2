@@ -20,7 +20,7 @@ public class TaskSeven {
 		}
 	}
 	void output() {
-		System.out.println("Ваша матрица: ");
+		System.out.println("Р’Р°С€Р° РјР°С‚СЂРёС†Р°: ");
 		for (i = 0; i <= n - 1; i++) {
         for (j = 0; j <= n - 1; j++) {
         	System.out.printf("%.2f",matrixA[i][j]);
@@ -28,12 +28,12 @@ public class TaskSeven {
         }
         System.out.println();
 		}
-		System.out.println("Количество положительных элементов: "+ m);
+		System.out.println("РљРѕР»РёС‡РµСЃС‚РІРѕ РїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ: "+ m);
 	}
 	public static void main(String[] args) {
 		TaskSeven myTaskSeven = new TaskSeven();
 		Scanner in = new Scanner(System.in);
-		System.out.println("Введите порядок матрицы n: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ РїРѕСЂСЏРґРѕРє РјР°С‚СЂРёС†С‹ n: ");
 		myTaskSeven.n = in.nextInt();
 		in.close();
 		myTaskSeven.input();

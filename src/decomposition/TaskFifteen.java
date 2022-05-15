@@ -26,22 +26,21 @@ public class TaskFifteen {
 	}
 	void decomposition3() {
 		for( j = 0  ; j <= arrayLength - 2  ; j++ ) 
-			if((dbArray[j]-dbArray[j+1]) != 1 ) //â ìàññèâå öèôðû ñòîÿò çàäîì íàïåð¸ä :)
+			if((dbArray[j]-dbArray[j+1]) != 1 ) //Ð² Ð¼Ð°ÑÑÐ¸Ð²Ðµ Ñ†Ð¸Ñ„Ñ€Ñ‹ ÑÑ‚Ð¾ÑÑ‚ Ð·Ð°Ð´Ð¾Ð¼ Ð½Ð°Ð¿ÐµÑ€Ñ‘Ð´ :)
 				flag = true;
 	}
 	void decomposition4() {
 		 if(flag != true)
-	    	 System.out.println("Íàéäåíà ñòðîãî âîçðàñòàþùàÿ ïîñëåäîâàòåëüíîñòü: " + i);
+	    	 System.out.println("ÐÐ°Ð¹Ð´ÐµÐ½Ð° ÑÑ‚Ñ€Ð¾Ð³Ð¾ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚Ð°ÑŽÑ‰Ð°Ñ Ð¿Ð¾ÑÐ»ÐµÐ´Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚ÑŒ: " + i);
 	     x=0;
 	     j=0;
 	     arrayLength=0;
 	     flag=false;
 	}
 	public static void main(String[] args) {
-		
 		TaskFifteen myTaskFifteen = new TaskFifteen();
 				Scanner in = new Scanner(System.in);
-				System.out.println("Ââåäèòå ÷èñëî äî êîòîðîãî áóäåì èñêàòü: ");
+				System.out.println("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð´Ð¾ ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð³Ð¾ Ð±ÑƒÐ´ÐµÐ¼ Ð¸ÑÐºÐ°Ñ‚ÑŒ: ");
 				myTaskFifteen.k = in.nextInt();
 				in.close();
 				myTaskFifteen.decomposition(); 

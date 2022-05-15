@@ -7,11 +7,10 @@ public class TaskSixteen {
 	int m,n,i,j,k,p,temp,temp2;
 	boolean flag;
 	void input() {
-		//Размерность матрцы, увеличение размера увеличивает время построения!
+		//Р Р°Р·РјРµСЂРЅРѕСЃС‚СЊ РјР°С‚СЂС†С‹, СѓРІРµР»РёС‡РµРЅРёРµ СЂР°Р·РјРµСЂР° СѓРІРµР»РёС‡РёРІР°РµС‚ РІСЂРµРјСЏ РїРѕСЃС‚СЂРѕРµРЅРёСЏ!
 		m = 3; 
 		while( flag == false) {
 		flag = true;
-		
 		for (i = 0; i <= m - 1 ; i++)
 		for (j = 0; j <= m - 1; j++) 
 			 { 
@@ -21,7 +20,7 @@ public class TaskSixteen {
 		
 		for(k = 0 ; k <= m - 1 ; k++) 
  		temp += matrixA[ k ][ 0 ]; 
-		//проверка всех столбцов
+		//РїСЂРѕРІРµСЂРєР° РІСЃРµС… СЃС‚РѕР»Р±С†РѕРІ
 		for (j = 0; j <= m - 1; j++) 
 		{
 			for (i = 0; i <= m - 1 ; i++) 
@@ -30,7 +29,7 @@ public class TaskSixteen {
 			flag=false;
 			temp2 = 0;
 		}
-		//проверка всех строк
+		//РїСЂРѕРІРµСЂРєР° РІСЃРµС… СЃС‚СЂРѕРє
 		for (i = 0; i <= m - 1 ; i++) 
 		{
 			for (j = 0; j <= m - 1; j++) 
@@ -39,7 +38,7 @@ public class TaskSixteen {
 			flag=false;
 			temp2 = 0;
 		}
-		//проверка диагонали главной
+		//РїСЂРѕРІРµСЂРєР° РґРёР°РіРѕРЅР°Р»Рё РіР»Р°РІРЅРѕР№
 		for (i = 0; i <= m - 1 ; i++) 
 			for (j = 0; j <= m - 1; j++) 
 				if( i==j )
@@ -47,7 +46,7 @@ public class TaskSixteen {
 		if(temp2 != temp)
 			flag=false;
 		temp2 = 0;
-		//проверка диагонали побочной
+		//РїСЂРѕРІРµСЂРєР° РґРёР°РіРѕРЅР°Р»Рё РїРѕР±РѕС‡РЅРѕР№
 		j=0;
 		for (i = m - 1; i >= 0 ; i--)  {
 				temp2 += matrixA[ i ][ j ];
@@ -63,7 +62,7 @@ public class TaskSixteen {
 	}
 
 	void output() {
-		System.out.println("Ваша матрица: ");
+		System.out.println("Р’Р°С€Р° РјР°С‚СЂРёС†Р°: ");
 		for (i = 0; i <= m - 1; i++) {
         for (j = 0; j <= m - 1; j++) {
         	System.out.print(matrixA[i][j]);
@@ -74,10 +73,8 @@ public class TaskSixteen {
 	}
 	public static void main(String[] args) {
 		TaskSixteen myTaskSixteen = new TaskSixteen();
-		System.out.println("Идёт построение матрицы 3 на 3.... ");
+		System.out.println("РРґС‘С‚ РїРѕСЃС‚СЂРѕРµРЅРёРµ РјР°С‚СЂРёС†С‹ 3 РЅР° 3.... ");
 		myTaskSixteen.input();
 		myTaskSixteen.output();
-
 	}
-
 }

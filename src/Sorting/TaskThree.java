@@ -8,34 +8,32 @@ public class TaskThree {
 	int[ ] dbArray = new int[ 100 ];
 	
 	void outputOnDisplay() {
-		System.out.println(" Новая последовательность " );
+		System.out.println(" РќРѕРІР°СЏ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ " );
 		for( i = 0 ; i <= n - 1 ; i++ ) {
 			System.out.print("  " + dbArray[ i ] );
 			}
 		}
-	//Сортировка выбором
+	// РЎРѕСЂС‚РёСЂРѕРІРєР° РІС‹Р±РѕСЂРѕРј
 	void sort() {
 		for( j = 0 ; j < dbArray.length ; j++ ) {
 			int maxInd = j;
-		//Ищем максимальный элемент среди всех
+		//РС‰РµРј РјР°РєСЃРёРјР°Р»СЊРЅС‹Р№ СЌР»РµРјРµРЅС‚ СЃСЂРµРґРё РІСЃРµС…
 		for( i = j ; i < dbArray.length ; i++ ) {
 			if(dbArray[ i ] > dbArray[ maxInd ]) 
 				maxInd = i;
 		}
-		//Меняем местами с первым
+		//РњРµРЅСЏРµРј РјРµСЃС‚Р°РјРё СЃ РїРµСЂРІС‹Рј
 		temp = dbArray[j];
-		dbArray[j]  =dbArray[maxInd];
+		dbArray[j]  = dbArray[maxInd];
 		dbArray[maxInd] = temp;
 		}
-		
-	
 	}
 	public static void main(String[] args) {
 		TaskThree myTaskThree = new TaskThree();
 		try (Scanner in = new Scanner(System.in)) {
-			System.out.println("Введите длинну массива A[N]: ");
+			System.out.println(" Р’РІРµРґРёС‚Рµ РґР»РёРЅРЅСѓ РјР°СЃСЃРёРІР° A[N]: ");
 			myTaskThree.n = in.nextInt();
-			System.out.println(" Введите массив " );
+			System.out.println("  Р’РІРµРґРёС‚Рµ РјР°СЃСЃРёРІ " );
 			for( myTaskThree.i = 0 ; myTaskThree.i <= myTaskThree.n - 1 ; myTaskThree.i++ ) {
 			myTaskThree.dbArray[myTaskThree.i] = in.nextInt();
 			}
@@ -43,7 +41,5 @@ public class TaskThree {
 		}
 		myTaskThree.sort(); 
 		myTaskThree.outputOnDisplay();
-
 	}
-
 }

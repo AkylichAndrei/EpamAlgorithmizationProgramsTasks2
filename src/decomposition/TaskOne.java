@@ -10,12 +10,12 @@ public class TaskOne {
 	void nod() {
 		flag = true;
 		nod = 2;
-		//ищем наиболшее число
+		// РёС‰РµРј РЅР°РёР±РѕР»С€РµРµ С‡РёСЃР»Рѕ
 		nod=dbArray[0];
 		for(i  = 1 ;i <= n - 1; i++) 
 		if(  nod < dbArray[i]  )  
 			nod=dbArray[i];
-	   //ищем наибольшее общее кратное
+	   // РёС‰РµРј РЅР°РёР±РѕР»СЊС€РµРµ РѕР±С‰РµРµ РєСЂР°С‚РЅРѕРµ
 		while(flag==true) {
 			flag = false;
 		for(i  = 0 ;i <= n - 1; i++) 
@@ -26,12 +26,12 @@ public class TaskOne {
 		}
 		
 		nod++;
-		System.out.println(" Наибольший общий делитель = " +  nod);
+		System.out.println(" РќР°РёР±РѕР»СЊС€РёР№ РѕР±С‰РёР№ РґРµР»РёС‚РµР»СЊ = " +  nod);
 	}
 	void nok() {
 		flag = true;
 		nok = 2;
-		//ищем наименьшее число
+		// РёС‰РµРј РЅР°РёРјРµРЅСЊС€РµРµ С‡РёСЃР»Рѕ
 		smallNumber=dbArray[0];
 		for(i  = 1 ;i <= n - 1; i++) 
 		if(  smallNumber > dbArray[i]  )  
@@ -44,7 +44,7 @@ public class TaskOne {
 				flag = true;
 		}
 		
-		//если вышли за пределы самого маленького числа
+		// РµСЃР»Рё РІС‹С€Р»Рё Р·Р° РїСЂРµРґРµР»С‹ СЃР°РјРѕРіРѕ РјР°Р»РµРЅСЊРєРѕРіРѕ С‡РёСЃР»Р°
 		if(nok >= smallNumber) {
 			flag = false;
 			nok=1;
@@ -53,21 +53,20 @@ public class TaskOne {
 		}
 		
 		nok--;
-		System.out.println(" Наименьшее общее кратное = " +  nok);
+		System.out.println(" РќР°РёРјРµРЅСЊС€РµРµ РѕР±С‰РµРµ РєСЂР°С‚РЅРѕРµ  = " +  nok);
 	}
 	public static void main(String[] args) {
 		TaskOne myTaskOne = new TaskOne();
 		try (Scanner in = new Scanner(System.in)) {
 			myTaskOne.n = 2;
 			for( myTaskOne.i = 0 ; myTaskOne.i <= myTaskOne.n - 1  ; myTaskOne.i++ ) {
-			System.out.println(" Введите число " + (myTaskOne.i + 1) );
+			System.out.println(" Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ  " + (myTaskOne.i + 1) );
 			myTaskOne.dbArray[myTaskOne.i] = in.nextInt();
 			}
 			in.close();
 		}
 		myTaskOne.nod();
 		myTaskOne.nok();
-
 	}
 
 }

@@ -20,7 +20,7 @@ public class TaskEight {
 		}
 	}
 	void output() {
-		System.out.println("Ваша матрица: ");
+		System.out.println("Р’Р°С€Р° РјР°С‚СЂРёС†Р°: ");
 		for (i = 0; i <= n - 1; i++) {
         for (j = 0; j <= n - 1; j++) {
         	System.out.print(matrixA[i][j]);
@@ -33,13 +33,13 @@ public class TaskEight {
 	public static void main(String[] args) {
 		TaskEight myTaskEight = new TaskEight();
 		Scanner in = new Scanner(System.in);
-		System.out.println("Введите порядок матрицы n: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ РїРѕСЂСЏРґРѕРє РјР°С‚СЂРёС†С‹ n: ");
 		myTaskEight.n = in.nextInt();
 		myTaskEight.input();
 		myTaskEight.output();
-		System.out.println("Введите номер первого столбца: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ РїРµСЂРІРѕРіРѕ СЃС‚РѕР»Р±С†Р°: ");
 		myTaskEight.k = in.nextInt();
-		System.out.println("Введите номер второго столбца: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ РІС‚РѕСЂРѕРіРѕ СЃС‚РѕР»Р±С†Р°: ");
 		myTaskEight.p = in.nextInt();
 		myTaskEight.change();
 		myTaskEight.output();

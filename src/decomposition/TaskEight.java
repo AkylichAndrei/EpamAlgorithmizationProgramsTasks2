@@ -1,7 +1,5 @@
 package decomposition;
-
 import java.util.Scanner;
-
 
 public class TaskEight {
 	int i,m,n,k,summ;
@@ -10,24 +8,22 @@ public class TaskEight {
 	void outputOnDisplay() {
 		for( i = k - 1  ; i <= m - 1 ; i++ ) 
 			summ+=dbArray[i];
-		System.out.println("Ñóììà òð¸õ ïîñëåäîâàòåëüíûõ ýëåìåíòîâ: îò Ê äî Ì ðîâíà = "+summ);
+		System.out.println("Ð¡ÑƒÐ¼Ð¼Ð° Ñ‚Ñ€Ñ‘Ñ… Ð¿Ð¾ÑÐ»ÐµÐ´Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ñ… ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²: Ð¾Ñ‚ Ðš Ð´Ð¾ Ðœ Ñ€Ð¾Ð²Ð½Ð° = "+summ);
 		}
 	public static void main(String[] args) {
-		
 		TaskEight myTaskEight = new TaskEight();
-		try (Scanner in = new Scanner(System.in)) {
-			System.out.println("Ââåäèòå äëèííó ìàññèâà A[N]: ");
-			myTaskEight.n = in.nextInt();
-			System.out.println("Ââåäèòå ìàññèâ: ");
-			for( myTaskEight.i = 0 ; myTaskEight.i <= myTaskEight.n - 1 ; myTaskEight.i++ ) {
-			myTaskEight.dbArray[myTaskEight.i] = in.nextDouble();
-			}
-			System.out.println("Ââåäèòå íîìåð ýëåìíåòà K (îò êîòîðîãî): ");
-			myTaskEight.k = in.nextInt();
-			System.out.println("Ââåäèòå íîìåð ýëåìåíòà M (äî êîòîðîãî): ");
-			myTaskEight.m = in.nextInt();
-			in.close();
+		Scanner in = new Scanner(System.in);
+		System.out.println("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð»Ð¸Ð½Ð½Ñƒ Ð¼Ð°ÑÑÐ¸Ð²Ð° A[N]: ");
+		myTaskEight.n = in.nextInt();
+		System.out.println("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð°ÑÑÐ¸Ð²: ");
+		for( myTaskEight.i = 0 ; myTaskEight.i <= myTaskEight.n - 1 ; myTaskEight.i++ ) {
+		myTaskEight.dbArray[myTaskEight.i] = in.nextDouble();
 		}
+		System.out.println("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ ÑÐ»ÐµÐ¼Ð½ÐµÑ‚Ð° K (Ð¾Ñ‚ ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð³Ð¾): ");
+		myTaskEight.k = in.nextInt();
+		System.out.println("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð° M (Ð´Ð¾ ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð³Ð¾): ");
+		myTaskEight.m = in.nextInt();
+		in.close();
 		myTaskEight.outputOnDisplay();  
 	}
 

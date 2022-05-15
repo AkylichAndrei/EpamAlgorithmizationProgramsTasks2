@@ -16,21 +16,18 @@ public class TaskTwelve {
 	 arrayLength = k / x;
 	 for( i = 0 ; i <= arrayLength - 1 ; i++)
 		 dbArray[ i ] = x;
-	 System.out.println("Âàø ìàññèâ: ");
+	 System.out.println("Ð’Ð°Ñˆ Ð¼Ð°ÑÑÐ¸Ð²: ");
 	 for( i = 0 ; i <= arrayLength - 1 ; i++)
 		 System.out.print(" || " + dbArray[ i ]);
-	
 		}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		TaskTwelve myTaskTwelve = new TaskTwelve();
 		Scanner in = new Scanner(System.in);
-		System.out.println("Ââåäèòå ÷èñëî K: ");
+		System.out.println("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ K: ");
 		myTaskTwelve.k = in.nextInt();
-		System.out.println("Ââåäèòå ÷èñëî N: ");
+		System.out.println("Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ N: ");
 		myTaskTwelve.n = in.nextInt();
 		in.close();
 		myTaskTwelve.outputOnDisplay(); 
 	}
-
 }

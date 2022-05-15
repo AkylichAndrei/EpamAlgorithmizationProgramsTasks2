@@ -8,28 +8,26 @@ public class TaskFive {
 	boolean flag;
 	
 	void print() {
-		
-		//ищем наиболшее число
+		// РёС‰РµРј РЅР°РёР±РѕР»С€РµРµ С‡РёСЃР»Рѕ
 		theLargestNumber=dbArray[0];
 		for(i  = 1 ;i <= n - 1; i++) 
 		if(  theLargestNumber < dbArray[i]  )  
 			theLargestNumber=dbArray[i];
-
-	   //ищем второе по величине
+	   // РёС‰РµРј РІС‚РѕСЂРѕРµ РїРѕ РІРµР»РёС‡РёРЅРµ
 		for(i  = 1 ;i <= n - 1; i++) 
 			if(dbArray[i]<theLargestNumber&secondLargestNumber<dbArray[i])
 				 secondLargestNumber=dbArray[i];
 		
-		System.out.println(" Первое по величине число = " +  theLargestNumber);
-		System.out.println(" Второе по величине число = " +  secondLargestNumber);
+		System.out.println(" РџРµСЂРІРѕРµ РїРѕ РІРµР»РёС‡РёРЅРµ С‡РёСЃР»Рѕ = " +  theLargestNumber);
+		System.out.println(" Р’С‚РѕСЂРѕРµ РїРѕ РІРµР»РёС‡РёРЅРµ С‡РёСЃР»Рѕ  = " +  secondLargestNumber);
 	}
 	public static void main(String[] args) {
 		TaskFive myTaskFive = new TaskFive();
 		try (Scanner in = new Scanner(System.in)) {
-			System.out.println(" Сколько элементов массива вы хотите ввести?");
+			System.out.println(" РЎРєРѕР»СЊРєРѕ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР° РІС‹ С…РѕС‚РёС‚Рµ РІРІРµСЃС‚Рё?");
 			myTaskFive.n = in.nextInt();
 			for( myTaskFive.i = 0 ; myTaskFive.i <= myTaskFive.n - 1  ; myTaskFive.i++ ) {
-			System.out.println(" Введите число " + (myTaskFive.i + 1) );
+			System.out.println(" Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ  " + (myTaskFive.i + 1) );
 			myTaskFive.dbArray[myTaskFive.i] = in.nextInt();
 			}
 			in.close();

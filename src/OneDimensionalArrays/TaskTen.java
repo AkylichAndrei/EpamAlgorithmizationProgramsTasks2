@@ -17,20 +17,20 @@ public class TaskTen {
 		}
 	}
 	void newArrayPrint() {	
-	System.out.println(" Новая последовательность : ");
+	System.out.println(" РњР°СЃСЃРёРІ Р·Р°РїРѕР»РЅРµРЅ  : ");
 	for( i = 0 ; i <= n - 1; i++ ) 
 		System.out.print(" | "+ dbArray[ i ]);
 	}
 	public static void main(String[] args) {
 		TaskTen myTaskTen = new TaskTen();
 		try (Scanner in = new Scanner(System.in)) {
-			System.out.println(" Из скольки чисел будет последовательность?: ");
+			System.out.println(" РР· СЃРєРѕР»СЊРєРё С‡РёСЃРµР» Р±СѓРґРµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ?: ");
 			myTaskTen.n = in.nextInt();
-			System.out.println(" Вводите числа: ");
+			System.out.println(" Р’РІРѕРґРёС‚Рµ С‡РёСЃР»Р°: ");
 			for( myTaskTen.i = 0 ; myTaskTen.i <= myTaskTen.n - 1 ; myTaskTen.i++ ) {
 			myTaskTen.dbArray[ myTaskTen.i ] =  in.nextDouble();
 			}
-			System.out.println(" Массив заполнен ");
+			System.out.println(" РњР°СЃСЃРёРІ Р·Р°РїРѕР»РЅРµРЅ  ");
 			in.close();
 		}
 		myTaskTen.sorting(); 

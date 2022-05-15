@@ -27,7 +27,7 @@ public class TaskFifteen {
 		}
 	}
 	void output() {
-		System.out.println("Ваша матрица: ");
+		System.out.println("Р’Р°С€Р° РјР°С‚СЂРёС†Р°: ");
 		for (i = 0; i <= 5 - 1; i++) {
         for (j = 0; j <= 5 - 1; j++) {
         	System.out.print(matrixA[i][j]);
@@ -40,12 +40,10 @@ public class TaskFifteen {
 		TaskFifteen myTaskFifteen = new TaskFifteen();
 		myTaskFifteen.input();
 		myTaskFifteen.output();
-		System.out.println("Наибольший элемент матрицы ");
+		System.out.println("РќР°РёР±РѕР»СЊС€РёР№ СЌР»РµРјРµРЅС‚ РјР°С‚СЂРёС†С‹ ");
 		myTaskFifteen.search();
-		System.out.println("Все нечётные элементы заменены! ");
+		System.out.println("Р’СЃРµ РЅРµС‡С‘С‚РЅС‹Рµ СЌР»РµРјРµРЅС‚С‹ Р·Р°РјРµРЅРµРЅС‹! ");
 		myTaskFifteen.insert();
 		myTaskFifteen.output();
-
 	}
-
 }

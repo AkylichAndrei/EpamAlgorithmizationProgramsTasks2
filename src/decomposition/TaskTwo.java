@@ -10,12 +10,12 @@ public class TaskTwo {
 	void nod() {
 		flag = true;
 		nod = 2;
-		//ищем наиболшее число
+		//РёС‰РµРј РЅР°РёР±РѕР»С€РµРµ С‡РёСЃР»Рѕ
 		nod=dbArray[0];
 		for(i  = 1 ;i <= n - 1; i++) 
 		if(  nod < dbArray[i]  )  
 			nod=dbArray[i];
-	   //ищем наибольшее общее кратное
+	   // РёС‰РµРј РЅР°РёР±РѕР»СЊС€РµРµ РѕР±С‰РµРµ РєСЂР°С‚РЅРѕРµ
 		while(flag==true) {
 			flag = false;
 		for(i  = 0 ;i <= n - 1; i++) 
@@ -24,16 +24,15 @@ public class TaskTwo {
 		}
 		nod--;
 		}
-		
 		nod++;
-		System.out.println(" Наибольший общий делитель = " +  nod);
+		System.out.println(" РќР°РёР±РѕР»СЊС€РёР№ РѕР±С‰РёР№ РґРµР»РёС‚РµР»СЊ  = " +  nod);
 	}
 	public static void main(String[] args) {
 		TaskTwo myTaskTwo = new TaskTwo();
 		try (Scanner in = new Scanner(System.in)) {
 			myTaskTwo.n = 4;
 			for( myTaskTwo.i = 0 ; myTaskTwo.i <= myTaskTwo.n - 1  ; myTaskTwo.i++ ) {
-			System.out.println(" Введите число " + (myTaskTwo.i + 1) );
+			System.out.println(" Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ  " + (myTaskTwo.i + 1) );
 			myTaskTwo.dbArray[myTaskTwo.i] = in.nextInt();
 			}
 			in.close();

@@ -22,24 +22,22 @@ public class TaskNine {
 		}
 	}
 	void print() {	
-	System.out.println(" Минимальный элемент : " + minNum 
-			+ " Количество повторений : " + repeatNum);
+	System.out.println(" РњРёРЅРёРјР°Р»СЊРЅС‹Р№ СЌР»РµРјРµРЅС‚ : " + minNum 
+			+ " РљРѕР»РёС‡РµСЃС‚РІРѕ РїРѕРІС‚РѕСЂРµРЅРёР№  : " + repeatNum);
 	}
 	public static void main(String[] args) {
 		TaskNine myTaskNine = new TaskNine();
 		try (Scanner in = new Scanner(System.in)) {
-			System.out.println(" Из скольки чисел будет последовательность?: ");
+			System.out.println(" РР· СЃРєРѕР»СЊРєРё С‡РёСЃРµР» Р±СѓРґРµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ?: ");
 			myTaskNine.n = in.nextInt();
-			System.out.println(" Вводите числа: ");
+			System.out.println(" Р’РІРѕРґРёС‚Рµ С‡РёСЃР»Р°: ");
 			for( myTaskNine.i = 0 ; myTaskNine.i <= myTaskNine.n - 1 ; myTaskNine.i++ ) {
 			myTaskNine.dbArray[ myTaskNine.i ] =  in.nextDouble();
 			}
-			System.out.println(" Массив заполнен ");
+			System.out.println(" РњР°СЃСЃРёРІ Р·Р°РїРѕР»РЅРµРЅ ");
 			in.close();
 		}
 		myTaskNine.searchNumber(); 
 		myTaskNine.print(); 
-
 	}
-
 }

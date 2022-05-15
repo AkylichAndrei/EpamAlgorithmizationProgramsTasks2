@@ -9,16 +9,13 @@ public class TaskThree {
 	double[ ] dbArray = new double[ 100 ];
 
 	void s2() {
-		
 		 s = (( pow( a , 2) * sqrt( 3 ) ) / 4 ) * 6;
-		 System.out.print(" Площадь правильного шестиугольника : " + s);
-	
+		 System.out.print(" РџР»РѕС‰Р°РґСЊ РїСЂР°РІРёР»СЊРЅРѕРіРѕ С€РµСЃС‚РёСѓРіРѕР»СЊРЅРёРєР° : " + s);
 		}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		TaskThree myTaskThree = new TaskThree();
 		Scanner in = new Scanner(System.in);
-		System.out.println("Введите длинну стороны A: ");
+		System.out.println(" Р’РІРµРґРёС‚Рµ РґР»РёРЅРЅСѓ СЃС‚РѕСЂРѕРЅС‹ A: ");
 		myTaskThree.a = in.nextInt();
 		in.close();
 		myTaskThree.s2(); 

@@ -1,6 +1,5 @@
 package OneDimensionalArrays;
 
-//import static java.lang.Math.*;
 import java.util.Scanner;
 
 public class TaskSix {
@@ -15,21 +14,21 @@ public class TaskSix {
 				k++;
 			} 
 			if( k == 2 ) {
-				System.out.println("Найдено простое число = " + i);
+				System.out.println(" РќР°Р№РґРµРЅРѕ РїСЂРѕСЃС‚РѕРµ С‡РёСЃР»Рѕ  = " + i);
 				M = M + i;
 			}
 		}
-		System.out.println("Сумма элементов = " + M);
+		System.out.println(" РЎСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ  = " + M);
 	}
 	public static void main(String[] args) {
 		TaskSix myTaskSix = new TaskSix();
 		try (Scanner in = new Scanner(System.in)) {
-			System.out.println(" Из скольки чисел будет последовательность?: ");
+			System.out.println(" РР· СЃРєРѕР»СЊРєРё С‡РёСЃРµР» Р±СѓРґРµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ?: ");
 			myTaskSix.n = in.nextInt();
 			for( myTaskSix.i = 0 ; myTaskSix.i <= myTaskSix.n - 1 ; myTaskSix.i++ ) {
 			myTaskSix.dbArray[ myTaskSix.i ] = 1;
 			}
-			System.out.println(" Массив заполнен ");
+			System.out.println(" РњР°СЃСЃРёРІ Р·Р°РїРѕР»РЅРµРЅ ");
 			in.close();
 		}
 		myTaskSix.func1(); 

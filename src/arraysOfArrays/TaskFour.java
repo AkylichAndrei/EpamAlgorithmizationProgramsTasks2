@@ -1,7 +1,5 @@
 package arraysOfArrays;
-
 import java.util.Scanner;
-
 
 public class TaskFour {
 	int[][] matrixA = new int [100][100];
@@ -26,7 +24,7 @@ public class TaskFour {
 	public static void main(String[] args) {
 		TaskFour myTaskFour = new TaskFour();
 		Scanner in = new Scanner(System.in);
-		System.out.println("Введите порядок матрицы n-чётное: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ РїРѕСЂСЏРґРѕРє РјР°С‚СЂРёС†С‹ n-С‡С‘С‚РЅРѕРµ: ");
 		myTaskFour.n = in.nextInt();
 		in.close();
 		myTaskFour.input();

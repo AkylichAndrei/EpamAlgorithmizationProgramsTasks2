@@ -1,5 +1,4 @@
 package decomposition;
-
 import java.util.Scanner;
 
 public class TaskSix {
@@ -9,12 +8,12 @@ public class TaskSix {
 	
 	void nod() {
 		flag = true;
-		//ищем наиболшее число
+		// РёС‰РµРј РЅР°РёР±РѕР»С€РµРµ С‡РёСЃР»Рѕ
 		nod=dbArray[0];
 		for(i  = 1 ;i <= n - 1; i++) 
 		if(  nod < dbArray[i]  )  
 			nod=dbArray[i];
-	   //ищем наибольшее общее кратное
+	   // РёС‰РµРј РЅР°РёР±РѕР»СЊС€РµРµ РѕР±С‰РµРµ РєСЂР°С‚РЅРѕРµ
 		while(flag==true) {
 			flag = false;
 		for(i  = 0 ;i <= n - 1; i++) 
@@ -23,19 +22,18 @@ public class TaskSix {
 		}
 		nod--;
 		}
-		
 		nod++;
 		if(nod==1)
-		System.out.println(" Наибольший общий делитель = " +  nod+ " числа взаимно простые ");
+		System.out.println(" РќР°РёР±РѕР»СЊС€РёР№ РѕР±С‰РёР№ РґРµР»РёС‚РµР»СЊ  = " +  nod+ "С‡РёСЃР»Р° РІР·Р°РёРјРЅРѕ РїСЂРѕСЃС‚С‹Рµ  ");
 		else
-			System.out.println(" Числа не взаимно простые " );
+			System.out.println(" Р§РёСЃР»Р° РЅРµ РІР·Р°РёРјРЅРѕ РїСЂРѕСЃС‚С‹Рµ " );
 	}
 	public static void main(String[] args) {
 		TaskSix myTaskSix = new TaskSix();
 		try (Scanner in = new Scanner(System.in)) {
 			myTaskSix.n = 3;
 			for( myTaskSix.i = 0 ; myTaskSix.i <= myTaskSix.n - 1  ; myTaskSix.i++ ) {
-			System.out.println(" Введите число " + (myTaskSix.i + 1) );
+			System.out.println(" Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ  " + (myTaskSix.i + 1) );
 			myTaskSix.dbArray[myTaskSix.i] = in.nextInt();
 			}
 			in.close();

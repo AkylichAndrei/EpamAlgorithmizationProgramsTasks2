@@ -3,24 +3,25 @@ package decomposition;
 import java.util.Scanner;
 
 public class TaskNine {
-	int p,x,y,z,t,s;
+	double p,x,y,z,t,s;
 
 	void outputOnDisplay() {
-	
-	//http://mozgan.ru/Geometry/ArearQuadrangle
-	 System.out.println("площадь четырёх угольника ровна: " + p);
+		p=(x+y+z+t)/2;
+	 System.out.println(" РџРѕР»СѓРїРµСЂРёРјРµС‚СЂ С‡РµС‚С‹СЂС‘С… СѓРіРѕР»СЊРЅРёРєР° СЂР°РІРµРЅ: " + p);
+	 s= Math.cbrt((p - x) * (p - y) * (p - z) * (p - t));
+	 System.out.println(" РџР»РѕС‰Р°РґСЊ С‡РµС‚С‹СЂС‘С… СѓРіРѕР»СЊРЅРёРєР° СЂРѕРІРЅР°: " + s);
 		}
 	public static void main(String[] args) {
 		TaskNine myTaskNine = new TaskNine();
 		Scanner in = new Scanner(System.in);
-		System.out.println("Введите длинну стороны X: ");
-		myTaskNine.x = in.nextInt();
-		System.out.println("Введите длинну стороны Y: ");
-		myTaskNine.y = in.nextInt();
-		System.out.println("Введите длинну стороны Z: ");
-		myTaskNine.z = in.nextInt();
-		System.out.println("Введите длинну стороны T: ");
-		myTaskNine.t = in.nextInt();
+		System.out.println("Р’РІРµРґРёС‚Рµ РґР»РёРЅРЅСѓ СЃС‚РѕСЂРѕРЅС‹ X: ");
+		myTaskNine.x = in.nextDouble();
+		System.out.println("Р’РІРµРґРёС‚Рµ РґР»РёРЅРЅСѓ СЃС‚РѕСЂРѕРЅС‹ Y: ");
+		myTaskNine.y = in.nextDouble();
+		System.out.println("Р’РІРµРґРёС‚Рµ РґР»РёРЅРЅСѓ СЃС‚РѕСЂРѕРЅС‹ Z: ");
+		myTaskNine.z = in.nextDouble();
+		System.out.println("Р’РІРµРґРёС‚Рµ РґР»РёРЅРЅСѓ СЃС‚РѕСЂРѕРЅС‹ T: ");
+		myTaskNine.t = in.nextDouble();
 		in.close();
 		myTaskNine.outputOnDisplay(); 
 	}

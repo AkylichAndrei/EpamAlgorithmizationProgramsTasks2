@@ -7,17 +7,16 @@ public class TaskSix {
 	int temp;
 	int[ ] dbArray = new int[ 100 ];
 	void outputOnDisplay() {
-		System.out.println(" Новая последовательность " );
+		System.out.println(" РќРѕРІР°СЏ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ " );
 		for( i = 0 ; i <= n - 1 ; i++ ) {
 			System.out.print("  " + dbArray[ i ] );
 			}
 		}
-	//Сортировка шелла
+	// РЎРѕСЂС‚РёСЂРѕРІРєР° С€РµР»Р»Р°
 	public void sort() {
         int h = 1;
         while (h*3 <n)
             h = h * 3 + 1;
-
         while(h >= 1) {
             hSort(dbArray, h);
             h = h/3;
@@ -41,12 +40,11 @@ public class TaskSix {
         array[ind2] = tmp;
     }
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		TaskSix myTaskSix = new TaskSix();
 		try (Scanner in = new Scanner(System.in)) {
-			System.out.println("Введите длинну массива A[N]: ");
+			System.out.println(" Р’РІРµРґРёС‚Рµ РґР»РёРЅРЅСѓ РјР°СЃСЃРёРІР° A[N]: ");
 			myTaskSix.n = in.nextInt();
-			System.out.println(" Введите массив " );
+			System.out.println(" Р’РІРµРґРёС‚Рµ РјР°СЃСЃРёРІ " );
 			for( myTaskSix.i = 0 ; myTaskSix.i <= myTaskSix.n - 1 ; myTaskSix.i++ ) {
 			myTaskSix.dbArray[myTaskSix.i] = in.nextInt();
 			}

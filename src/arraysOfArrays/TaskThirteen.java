@@ -33,7 +33,7 @@ public class TaskThirteen {
 		}
 	}
 	void output() {
-		System.out.println("Ваша матрица: ");
+		System.out.println("Р’Р°С€Р° РјР°С‚СЂРёС†Р°: ");
 		for (i = 0; i <= 5 - 1; i++) {
         for (j = 0; j <= 5 - 1; j++) {
         	System.out.print(matrixA[i][j]);
@@ -46,10 +46,10 @@ public class TaskThirteen {
 		TaskThirteen myTaskThirteen = new TaskThirteen();
 		myTaskThirteen.input();
 		myTaskThirteen.output();
-		System.out.println("Сортировка по возрастанию: ");
+		System.out.println("РЎРѕСЂС‚РёСЂРѕРІРєР° РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ: ");
 		myTaskThirteen.sortY();
 		myTaskThirteen.output();
-		System.out.println("Сортировка по убыванию: ");
+		System.out.println("РЎРѕСЂС‚РёСЂРѕРІРєР° РїРѕ СѓР±С‹РІР°РЅРёСЋ: ");
 		myTaskThirteen.sortX();
 		myTaskThirteen.output();
 

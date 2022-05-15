@@ -1,5 +1,4 @@
 package OneDimensionalArrays;
-
 import java.util.Scanner;
 
 public class TaskThree {
@@ -12,7 +11,7 @@ public class TaskThree {
 				k++;
 			} 
 		}
-		System.out.println(" Количество положительных элемнтов: " + k);
+		System.out.println(" РљРѕР»РёС‡РµСЃС‚РІРѕ РїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹С… СЌР»РµРјРЅС‚РѕРІ: " + k);
 	}
 	void outputOnDisplay2() {
 		for( i = 0 ; i <= n - 1 ; i++ ) {
@@ -20,7 +19,7 @@ public class TaskThree {
 				m++;
 			} 
 		}
-		System.out.println(" Количество отрицательных элемнтов: " + m);
+		System.out.println(" РљРѕР»РёС‡РµСЃС‚РІРѕ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹С… СЌР»РµРјРЅС‚РѕРІ: " + m);
 	}
 	void outputOnDisplay3() {
 		for( i = 0 ; i <= n - 1 ; i++ ) {
@@ -28,18 +27,17 @@ public class TaskThree {
 				z++;
 			} 
 		}
-		System.out.println(" Количество нулевых элемнтов: " + z);
+		System.out.println(" РљРѕР»РёС‡РµСЃС‚РІРѕ РЅСѓР»РµРІС‹С… СЌР»РµРјРЅС‚РѕРІ: " + z);
 	}
 	public static void main(String[] args) {
 		TaskThree myTaskThree = new TaskThree();
 		try (Scanner in = new Scanner(System.in)) {
-			System.out.println(" Из скольки чисел будет последовательность?: ");
+			System.out.println(" РР· СЃРєРѕР»СЊРєРё С‡РёСЃРµР» Р±СѓРґРµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ?: ");
 			myTaskThree.n = in.nextInt();
-			System.out.println(" Вводите числа: ");
+			System.out.println(" Р’РІРѕРґРёС‚Рµ С‡РёСЃР»Р°: ");
 			for( myTaskThree.i = 0 ; myTaskThree.i <= myTaskThree.n - 1 ; myTaskThree.i++ ) {
 			myTaskThree.dbArray[myTaskThree.i] = in.nextDouble();
 			}
-			
 			in.close();
 		}
 		myTaskThree.outputOnDisplay();  

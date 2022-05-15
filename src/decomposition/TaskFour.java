@@ -26,22 +26,20 @@ public class TaskFour {
 	}
 	}
 	void print() {
-		System.out.println("Максиммальное расстояние между точками равно : " + maxDistance);
-		System.out.println("Координаты точки 1  : X = " + x + " Y =  " + y);
-		System.out.println("Координаты точки 2  : X = " + x2 + " Y =  " + y2);
-	
+		System.out.println(" РњР°РєСЃРёРјРјР°Р»СЊРЅРѕРµ СЂР°СЃСЃС‚РѕСЏРЅРёРµ РјРµР¶РґСѓ С‚РѕС‡РєР°РјРё СЂР°РІРЅРѕ  : " + maxDistance);
+		System.out.println(" РљРѕРѕСЂРґРёРЅР°С‚С‹ С‚РѕС‡РєРё 1  : X = " + x + " Y =  " + y);
+		System.out.println(" РљРѕРѕСЂРґРёРЅР°С‚С‹ С‚РѕС‡РєРё 2  : X = " + x2 + " Y =  " + y2);
 	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		TaskFour myTaskFour = new TaskFour();
 		try (Scanner in = new Scanner(System.in)) {
-			System.out.println("Сколько точек будете вводить? ");
+			System.out.println(" РЎРєРѕР»СЊРєРѕ С‚РѕС‡РµРє Р±СѓРґРµС‚Рµ РІРІРѕРґРёС‚СЊ? ");
 			myTaskFour.n = in.nextInt();
 			for( myTaskFour.i = 0 ; myTaskFour.i <= myTaskFour.n - 1  ; myTaskFour.i++ ) {
-			System.out.println(" Введите координаты точки " + (myTaskFour.i + 1) +" по X" );
+			System.out.println(" Р’РІРµРґРёС‚Рµ РєРѕРѕСЂРґРёРЅР°С‚С‹ С‚РѕС‡РєРё  " + (myTaskFour.i + 1) +" пїЅпїЅ X" );
 			myTaskFour.coordinates[0][ myTaskFour.i] = in.nextDouble();
-			System.out.println(" Введите координаты точки " + (myTaskFour.i + 1) +" по Y" );
+			System.out.println(" Р’РІРµРґРёС‚Рµ РєРѕРѕСЂРґРёРЅР°С‚С‹ С‚РѕС‡РєРё " + (myTaskFour.i + 1) +" пїЅпїЅ Y" );
 			myTaskFour.coordinates[1][myTaskFour.i] = in.nextDouble();
 			}
 			in.close();

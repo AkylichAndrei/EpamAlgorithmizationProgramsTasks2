@@ -1,6 +1,7 @@
 package Sorting;
-
 import java.util.Arrays;
+
+// Р­С‚Рѕ РїСЂР°РІРёР»СЊРЅРѕ РІС‹РїРѕР»РЅРµРЅРЅРѕРµ Р·Р°РґР°РЅРёРµ 5. Р’ TaskFive РїСЂРѕСЃС‚Рѕ СЃРѕСЂС‚РёСЂРѕРІРєР°.
 
 public class TaskFiveTrue {
 	
@@ -8,12 +9,11 @@ public class TaskFiveTrue {
 
 		int i,j,firstIndex,lastIndex, indexElementToSearch;
 		int temp,temp2,stage=0;
-		int[] array = {9, 7, 8, 3, 8}; //объявляем и инициализируем массив
+		int[] array = {9, 7, 8, 3, 8}; //РѕР±СЉСЏРІР»СЏРµРј Рё РёРЅРёС†РёР°Р»РёР·РёСЂСѓРµРј РјР°СЃСЃРёРІ
 		int[] arraySort = new int[5];
-		System.out.println("Массив не отсортирован:  ");//печатаем массив 
-        System.out.println(Arrays.toString(array));//печатаем массив 
+		System.out.println(" РњР°СЃСЃРёРІ РЅРµ РѕС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅ:  ");
+        System.out.println(Arrays.toString(array));//РїРµС‡Р°С‚Р°РµРј РјР°СЃСЃРёРІ 
         
-      //  Arrays.sort(array, 0, 5); //сортируем весь массив от нулевого до четвёртого члена
        arraySort[0] = array[0];
         for( i = 1 ; i <= 4 ; i++)
         {   
@@ -23,32 +23,27 @@ public class TaskFiveTrue {
         	lastIndex = i;
         	indexElementToSearch = binarySearch(arraySort, elementToSearch ,firstIndex ,lastIndex);
                        
-        	//вставляем найденный елемент в массив
+        	// РІСЃС‚Р°РІР»СЏРµРј РЅР°Р№РґРµРЅРЅС‹Р№ СЌР»РµРјРµРЅС‚ РІ РјР°СЃСЃРёРІ
         	temp = arraySort[indexElementToSearch];
         	arraySort[indexElementToSearch]=elementToSearch;
         	
-        	//сдвигаем все элементы в право
+        	//СЃРґРІРёРіР°РµРј РІСЃРµ СЌР»РµРјРµРЅС‚С‹ РІ РїСЂР°РІРѕ
         		for (j = indexElementToSearch + 1; j <= i; j++) {
         			temp2 = arraySort[ j ];
         			arraySort[ j ] = temp;
         			temp = temp2;
         			}
-        		System.out.println("Этап вставки в массив № "+stage);//выводим отсортированный массив на экран
-        		System.out.println(Arrays.toString(arraySort));//выводим отсортированный массив на экран
+        		System.out.println(" Р­С‚Р°Рї РІСЃС‚Р°РІРєРё РІ РјР°СЃСЃРёРІ в„– " + stage);
+        		System.out.println(Arrays.toString(arraySort));//РІС‹РІРѕРґРёРј РѕС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅРЅС‹Р№ РјР°СЃСЃРёРІ РЅР° СЌРєСЂР°РЅ
         }
-        
-        
 	}
 	
 	public static int binarySearch(int arrSort[], int elementToSearch, int firstIndex, int lastIndex) {
 		int indexElementToSearch=0;
-		//(lastIndex - firstIndex) > 1
-		
 	    while(firstIndex <= lastIndex) {
-		
 	    int middleIndex = (firstIndex + lastIndex) / 2;
 	    
-	    //сли интервал минимальный 
+	    // Р•СЃР»Рё РёРЅС‚РµСЂРІР°Р» РјРёРЅРёРјР°Р»СЊРЅС‹Р№
 	    if ((firstIndex==lastIndex)&&(elementToSearch > arrSort[middleIndex])) {
 	    	indexElementToSearch = middleIndex + 1;
 	    	break;
@@ -57,25 +52,24 @@ public class TaskFiveTrue {
 	    	indexElementToSearch = middleIndex;
 	    	break;
 	    }
-	    //если мы нашли элемент одинаковый
+	    //Р•СЃР»Рё РјС‹ РЅР°С€Р»Рё СЌР»РµРјРµРЅС‚ РѕРґРёРЅР°РєРѕРІС‹Р№
 	    if (elementToSearch == arrSort[middleIndex]) {
 	    	indexElementToSearch = middleIndex;
 	    	break;
 	    }
 	    
-	 // если средний элемент больше
-        // направляем наш индекс в middle-1, убирая вторую часть из рассмотрения
+	 // РµСЃР»Рё СЃСЂРµРґРЅРёР№ СЌР»РµРјРµРЅС‚ Р±РѕР»СЊС€Рµ
+        // РЅР°РїСЂР°РІР»СЏРµРј РЅР°С€ РёРЅРґРµРєСЃ РІ middle-1, СѓР±РёСЂР°СЏ РІС‚РѕСЂСѓСЋ С‡Р°СЃС‚СЊ РёР· СЂР°СЃСЃРјРѕС‚СЂРµРЅРёСЏ
 	   else if (elementToSearch < arrSort[middleIndex]  ) 
             lastIndex = middleIndex - 1;
         
-	 // если средний элемент меньше
-        // направляем наш индекс в middle+1, убирая первую часть из рассмотрения
+	 // РµСЃР»Рё СЃСЂРµРґРЅРёР№ СЌР»РµРјРµРЅС‚ РјРµРЅСЊС€Рµ
+        // РЅР°РїСЂР°РІР»СЏРµРј РЅР°С€ РёРЅРґРµРєСЃ РІ middle+1, СѓР±РёСЂР°СЏ РїРµСЂРІСѓСЋ С‡Р°СЃС‚СЊ РёР· СЂР°СЃРјРѕС‚СЂРµРЅРёСЏ
         else if (elementToSearch > arrSort[middleIndex]  ) 
             firstIndex = middleIndex + 1;
-
 	    indexElementToSearch=middleIndex;
 	    }
-	    System.out.println(" центральный элемент"+indexElementToSearch);
+	    System.out.println("  С†РµРЅС‚СЂР°Р»СЊРЅС‹Р№ СЌР»РµРјРµРЅС‚ "+indexElementToSearch);
 	return indexElementToSearch ;
 	}
 }

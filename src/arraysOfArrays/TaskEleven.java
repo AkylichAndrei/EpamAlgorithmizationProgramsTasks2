@@ -29,7 +29,7 @@ public class TaskEleven {
 		}
 	}
 	void output() {
-		System.out.println("Ваша матрица: ");
+		System.out.println("Р’Р°С€Р° РјР°С‚СЂРёС†Р°: ");
 		for (i = 0; i <= 10 - 1; i++) {
         for (j = 0; j <= 20 - 1; j++) {
         	System.out.print(matrixA[i][j]);
@@ -37,8 +37,8 @@ public class TaskEleven {
         }
         System.out.println();
 		}
-		System.out.println("Элементы равные 5 встречаются более трёх раз "
-				+ "в строках : ");
+		System.out.println("Р­Р»РµРјРµРЅС‚С‹ СЂР°РІРЅС‹Рµ 5 РІСЃС‚СЂРµС‡Р°СЋС‚СЃСЏ Р±РѕР»РµРµ С‚СЂС‘С… СЂР°Р· "
+				+ "РІ СЃС‚СЂРѕРєР°С… : ");
 		for (i = 0; i <= k - 1; i++) {
 			System.out.print(matrixB[i]);
     	    System.out.print("\t");

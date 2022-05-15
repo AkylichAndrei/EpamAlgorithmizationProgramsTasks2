@@ -7,22 +7,20 @@ public class TaskTen {
 	double[ ] dbArray = new double[ 100 ];
 		
 	void outputOnDisplay() {
-		
 		while(n > 0){
 			dbArray[ i ] = n % 10;
 			i++;
 			arrayLength++;
 			n = n / 10;
 		}
-		System.out.println("Массив из цифр введённого числа: ");
+		System.out.println(" РњР°СЃСЃРёРІ РёР· С†РёС„СЂ РІРІРµРґС‘РЅРЅРѕРіРѕ С‡РёСЃР»Р°: ");
 		for( i = 0  ; i <= arrayLength - 1  ; i++ ) 
 			System.out.print(dbArray[i]+" || ");
 		}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		TaskTen myTaskTen = new TaskTen();
 		Scanner in = new Scanner(System.in);
-		System.out.println("Введите натуральное число N: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ РЅР°С‚СѓСЂР°Р»СЊРЅРѕРµ С‡РёСЃР»Рѕ N: ");
 		myTaskTen.n = in.nextInt();
 		in.close();
 		myTaskTen.outputOnDisplay();  

@@ -13,9 +13,8 @@ public class TaskSixteen {
 		 decomposition2();
 	     decomposition3();
 	     decomposition4();
-	     
 	 }
-	 System.out.println("Сумма всех найденных нечётных чисел: " + allSumm);
+	 System.out.println("РЎСѓРјРјР° РІСЃРµС… РЅР°Р№РґРµРЅРЅС‹С… РЅРµС‡С‘С‚РЅС‹С… С‡РёСЃРµР»: " + allSumm);
 	 i=allSumm;
 	 decomposition2();
 	 decomposition5();
@@ -32,13 +31,13 @@ public class TaskSixteen {
 	}
 	void decomposition3() {
 		for( j = 0  ; j <= arrayLength - 1  ; j++ ) 
-			if((dbArray[j]%2) == 0 ) //в массиве цифры стоят задом наперёд :)
+			if((dbArray[j]%2) == 0 ) //РІ РјР°СЃСЃРёРІРµ С†РёС„СЂС‹ СЃС‚РѕСЏС‚ Р·Р°РґРѕРј РЅР°РїРµСЂС‘Рґ :)
 				flag = true;
 		
 	}
 	void decomposition4() {
 		 if(flag != true) {
-	    	 System.out.println("Найдена число содержащее только нечётные числа: " + i);
+	    	 System.out.println("РќР°Р№РґРµРЅР° С‡РёСЃР»Рѕ СЃРѕРґРµСЂР¶Р°С‰РµРµ С‚РѕР»СЊРєРѕ РЅРµС‡С‘С‚РЅС‹Рµ С‡РёСЃР»Р°: " + i);
 	    	 allSumm=allSumm+i;
 		 }
 	     x=0;
@@ -48,18 +47,17 @@ public class TaskSixteen {
 	}
 	void decomposition5() {
 		for( j = 0  ; j <= arrayLength - 1  ; j++ ) 
-			if((dbArray[j]%2) == 0 ) //в массиве цифры стоят задом наперёд :)
+			if((dbArray[j]%2) == 0 ) //РІ РјР°СЃСЃРёРІРµ С†РёС„СЂС‹ СЃС‚РѕСЏС‚ Р·Р°РґРѕРј РЅР°РїРµСЂС‘Рґ :)
 				ink++;
 		
 	}
 	void decomposition6() {
-		 System.out.println("Чётных цифр в сумме: " + ink);
+		 System.out.println("Р§С‘С‚РЅС‹С… С†РёС„СЂ РІ СЃСѓРјРјРµ: " + ink);
 	}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		TaskSixteen myTaskSixteen = new TaskSixteen();
 		Scanner in = new Scanner(System.in);
-		System.out.println("Введите число до которого будем искать: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ РґРѕ РєРѕС‚РѕСЂРѕРіРѕ Р±СѓРґРµРј РёСЃРєР°С‚СЊ: ");
 		myTaskSixteen.k = in.nextInt();
 		in.close();
 		myTaskSixteen.decomposition(); 
