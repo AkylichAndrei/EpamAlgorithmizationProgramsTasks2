@@ -10,13 +10,14 @@ public class TaskSeventeen {
 
 	void decomposition() {
 		x = k;
-	 while( k > 0 ) {
-		 decomposition2();
-	     decomposition3();
-	     decomposition4();
-	 }
-	 System.out.println("Для числа: " + x + " нужно произвести: " + m + " действий, чтобы получить 0 ");
+	        while( k > 0 ) {
+			decomposition2();
+	        	decomposition3();
+	        	decomposition4();
 		}
+		System.out.println("Для числа: " + x + " нужно произвести: " + 
+			   m + " действий, чтобы получить 0 ");
+	}
 	void decomposition2() {
 		n = k;
 		while(n > 0){
@@ -28,13 +29,13 @@ public class TaskSeventeen {
 	}
 	void decomposition3() {
 		for( j = 0  ; j <= arrayLength - 1  ; j++ ) 
-			summ = summ + dbArray[ j ]; //в массиве цифры стоят задом наперёд :)
+			summ = summ + dbArray[ j ]; 
 	}
 	void decomposition4() {
-		 k = k - summ;
-	     j=0;
-	     arrayLength=0;  
-	     m++;
+		k = k - summ;
+	     	j=0;
+	        arrayLength=0;  
+	        m++;
 	}
 
 	public static void main(String[] args) {
